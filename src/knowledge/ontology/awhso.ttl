@@ -1,0 +1,209 @@
+@prefix awhso: <https://w3id.org/awhso#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+awhso: a owl:Ontology ;
+    rdfs:label "Airport Wildlife-Hazard Situation Ontology (AWHSO)" ;
+    rdfs:comment "TBox for completing sparse airside wildlife-strike events into queryable engineering situations. Slot status is observed, inferred, or unknown. Inferred edges carry provenance." .
+
+# ----- layer roots -----
+awhso:Situation a owl:Class ; rdfs:label "Situation" .
+awhso:Artifact a owl:Class ; rdfs:label "Artifact" .
+awhso:Agent a owl:Class ; rdfs:label "Agent" .
+awhso:Event a owl:Class ; rdfs:label "Event" .
+awhso:Norm a owl:Class ; rdfs:label "Norm" .
+awhso:Action a owl:Class ; rdfs:label "Action" .
+awhso:Provenance a owl:Class ; rdfs:label "Provenance" .
+awhso:Slot a owl:Class ; rdfs:label "Slot" .
+
+# ----- artifacts -----
+awhso:Airport a owl:Class ; rdfs:subClassOf awhso:Artifact .
+awhso:Aircraft a owl:Class ; rdfs:subClassOf awhso:Artifact .
+awhso:ComponentFamily a owl:Class ; rdfs:subClassOf awhso:Artifact .
+awhso:FlightPhase a owl:Class ; rdfs:subClassOf awhso:Artifact .
+awhso:AirsideObject a owl:Class ; rdfs:subClassOf awhso:Artifact .
+awhso:Attractant a owl:Class ; rdfs:subClassOf awhso:AirsideObject .
+awhso:StandingWater a owl:Class ; rdfs:subClassOf awhso:Attractant .
+awhso:Wetland a owl:Class ; rdfs:subClassOf awhso:Attractant .
+awhso:Grassland a owl:Class ; rdfs:subClassOf awhso:Attractant .
+awhso:WasteFacility a owl:Class ; rdfs:subClassOf awhso:Attractant .
+awhso:Agriculture a owl:Class ; rdfs:subClassOf awhso:Attractant .
+awhso:PerchStructure a owl:Class ; rdfs:subClassOf awhso:Attractant .
+
+# ----- agents -----
+awhso:WildlifeAgent a owl:Class ; rdfs:subClassOf awhso:Agent .
+awhso:SizeGuild a owl:Class ; rdfs:subClassOf awhso:Agent .
+awhso:Species a owl:Class ; rdfs:subClassOf awhso:WildlifeAgent .
+
+# ----- events -----
+awhso:StrikeEvent a owl:Class ; rdfs:subClassOf awhso:Event .
+awhso:DamageOutcome a owl:Class ; rdfs:subClassOf awhso:Event .
+
+# ----- norms -----
+awhso:RegulationClause a owl:Class ; rdfs:subClassOf awhso:Norm .
+awhso:AdvisoryCircular a owl:Class ; rdfs:subClassOf awhso:Norm .
+awhso:ActionCatalog a owl:Class ; rdfs:subClassOf awhso:Norm .
+
+# ----- actions -----
+awhso:WHMPAction a owl:Class ; rdfs:subClassOf awhso:Action .
+awhso:PopulationManagement a owl:Class ; rdfs:subClassOf awhso:WHMPAction .
+awhso:HabitatModification a owl:Class ; rdfs:subClassOf awhso:WHMPAction .
+awhso:LandUseChange a owl:Class ; rdfs:subClassOf awhso:WHMPAction .
+awhso:DrainStandingWater a owl:Class ; rdfs:subClassOf awhso:HabitatModification .
+awhso:GrassHeightManagement a owl:Class ; rdfs:subClassOf awhso:HabitatModification .
+awhso:ExclusionFencing a owl:Class ; rdfs:subClassOf awhso:HabitatModification .
+awhso:WasteManagement a owl:Class ; rdfs:subClassOf awhso:LandUseChange .
+awhso:LandUseAgreement a owl:Class ; rdfs:subClassOf awhso:LandUseChange .
+awhso:Harassment a owl:Class ; rdfs:subClassOf awhso:PopulationManagement .
+awhso:LethalControl a owl:Class ; rdfs:subClassOf awhso:PopulationManagement .
+
+# ----- situation slots -----
+awhso:hasArtifact a owl:ObjectProperty ; rdfs:domain awhso:Situation ; rdfs:range awhso:Artifact .
+awhso:hasAgent a owl:ObjectProperty ; rdfs:domain awhso:Situation ; rdfs:range awhso:Agent .
+awhso:hasEvent a owl:ObjectProperty ; rdfs:domain awhso:Situation ; rdfs:range awhso:Event .
+awhso:hasNorm a owl:ObjectProperty ; rdfs:domain awhso:Situation ; rdfs:range awhso:Norm .
+awhso:hasAction a owl:ObjectProperty ; rdfs:domain awhso:Situation ; rdfs:range awhso:Action .
+awhso:hasSlot a owl:ObjectProperty ; rdfs:domain awhso:Situation ; rdfs:range awhso:Slot .
+awhso:slotFiller a owl:ObjectProperty ; rdfs:domain awhso:Slot .
+awhso:slotLayer a owl:DatatypeProperty ; rdfs:domain awhso:Slot ; rdfs:range xsd:string .
+awhso:slotStatus a owl:DatatypeProperty ; rdfs:domain awhso:Slot ; rdfs:range xsd:string .
+awhso:SlotStatus a owl:Class ; rdfs:label "SlotStatus" .
+awhso:StatusObserved a awhso:SlotStatus ; rdfs:label "observed" .
+awhso:StatusInferred a awhso:SlotStatus ; rdfs:label "inferred" .
+awhso:StatusUnknown a awhso:SlotStatus ; rdfs:label "unknown" .
+awhso:EmptyFiller a owl:Thing ; rdfs:label "EmptyFiller" ;
+    rdfs:comment "Written empty filler: the layer was assigned unknown after completion." .
+awhso:hasStatus a owl:ObjectProperty ; rdfs:domain awhso:Slot ; rdfs:range awhso:SlotStatus .
+awhso:StatusObserved owl:differentFrom awhso:StatusInferred , awhso:StatusUnknown .
+awhso:StatusInferred owl:differentFrom awhso:StatusUnknown .
+awhso:hasProvenance a owl:ObjectProperty ; rdfs:range awhso:Provenance .
+awhso:derivedFrom a owl:ObjectProperty ; rdfs:domain awhso:Provenance .
+awhso:provenanceKind a owl:DatatypeProperty ; rdfs:domain awhso:Provenance ; rdfs:range xsd:string .
+
+# ----- event / airport graph -----
+awhso:occursAtAirport a owl:ObjectProperty ; rdfs:domain awhso:StrikeEvent ; rdfs:range awhso:Airport .
+awhso:strikesComponent a owl:ObjectProperty ; rdfs:domain awhso:StrikeEvent ; rdfs:range awhso:ComponentFamily .
+awhso:inPhase a owl:ObjectProperty ; rdfs:domain awhso:StrikeEvent ; rdfs:range awhso:FlightPhase .
+awhso:hasSizeGuild a owl:ObjectProperty ; rdfs:domain awhso:StrikeEvent ; rdfs:range awhso:SizeGuild .
+awhso:involvesSpecies a owl:ObjectProperty ; rdfs:domain awhso:StrikeEvent ; rdfs:range awhso:Species .
+awhso:hasDamage a owl:ObjectProperty ; rdfs:domain awhso:StrikeEvent ; rdfs:range awhso:DamageOutcome .
+awhso:locatedAt a owl:ObjectProperty ; rdfs:domain awhso:AirsideObject ; rdfs:range awhso:Airport .
+awhso:inferredAttractant a owl:ObjectProperty ; rdfs:range awhso:Attractant .
+awhso:observedAttractant a owl:ObjectProperty ; rdfs:domain awhso:Airport ; rdfs:range awhso:Attractant .
+awhso:osmId a owl:DatatypeProperty ; rdfs:range xsd:string .
+awhso:licensedBy a owl:ObjectProperty ; rdfs:range awhso:Norm .
+awhso:licensesAction a owl:ObjectProperty ; rdfs:domain awhso:Norm ; rdfs:range awhso:WHMPAction .
+awhso:preconditionAttractant a owl:ObjectProperty ; rdfs:domain awhso:WHMPAction ; rdfs:range awhso:Attractant .
+awhso:supportsAction a owl:ObjectProperty ; rdfs:domain awhso:StrikeEvent ; rdfs:range awhso:WHMPAction .
+awhso:documentsAction a owl:ObjectProperty ; rdfs:domain awhso:Airport ; rdfs:range awhso:WHMPAction .
+awhso:recommendsAction a owl:ObjectProperty ; rdfs:domain awhso:Airport ; rdfs:range awhso:WHMPAction .
+
+# Plan-event disagreement: document and local events do not agree on an action type.
+awhso:PlanEventDisagreement a owl:Class ; rdfs:label "PlanEventDisagreement" ;
+    rdfs:comment "An individual recording an action type at a site where the action document and local events do not agree." .
+awhso:aboutSite a owl:ObjectProperty ; rdfs:domain awhso:PlanEventDisagreement .
+awhso:aboutAction a owl:ObjectProperty ; rdfs:domain awhso:PlanEventDisagreement ; rdfs:range awhso:Action .
+awhso:disagreementKind a owl:DatatypeProperty ; rdfs:domain awhso:PlanEventDisagreement ; rdfs:range xsd:string .
+awhso:hasEventLog a owl:DatatypeProperty ; rdfs:range xsd:boolean .
+awhso:HabitatAction a owl:Class ; rdfs:subClassOf awhso:Action ; rdfs:label "HabitatAction" .
+awhso:ControlAction a owl:Class ; rdfs:subClassOf awhso:Action ; rdfs:label "ControlAction" .
+awhso:localUnsupported a owl:ObjectProperty ; rdfs:range awhso:Action .
+awhso:undocumentedAction a owl:ObjectProperty ; rdfs:range awhso:Action .
+awhso:emptyEventLog a owl:DatatypeProperty ; rdfs:range xsd:boolean .
+awhso:populatedEventLog a owl:DatatypeProperty ; rdfs:range xsd:boolean .
+awhso:hasPlan a owl:DatatypeProperty ; rdfs:range xsd:boolean .
+awhso:emptyPlan a owl:DatatypeProperty ; rdfs:range xsd:boolean .
+awhso:preconditionObjectPresent a owl:ObjectProperty ; rdfs:range awhso:Action .
+awhso:preconditionObjectAbsent a owl:ObjectProperty ; rdfs:range awhso:Action .
+awhso:DocumentedWithoutLocalEvent a owl:NamedIndividual ; rdfs:label "documented_without_local_events" .
+awhso:EventSupportedNotDocumented a owl:NamedIndividual ; rdfs:label "event_supported_not_in_document" .
+awhso:actionType a owl:ObjectProperty ; rdfs:domain awhso:WHMPAction ; rdfs:range owl:Class .
+
+awhso:eventId a owl:DatatypeProperty ; rdfs:range xsd:string .
+awhso:airportId a owl:DatatypeProperty ; rdfs:range xsd:string .
+awhso:year a owl:DatatypeProperty ; rdfs:range xsd:integer .
+awhso:damaged a owl:DatatypeProperty ; rdfs:range xsd:boolean .
+awhso:labelText a owl:DatatypeProperty ; rdfs:range xsd:string .
+
+# ----- TBox individuals: phases, size guilds, components, norms -----
+awhso:PhaseDeparture a awhso:FlightPhase ; rdfs:label "departure" .
+awhso:PhaseArrival a awhso:FlightPhase ; rdfs:label "arrival" .
+awhso:PhaseEnroute a awhso:FlightPhase ; rdfs:label "enroute" .
+awhso:PhaseGround a awhso:FlightPhase ; rdfs:label "ground" .
+awhso:PhaseUnknown a awhso:FlightPhase ; rdfs:label "unknown" .
+
+awhso:SizeSmall a awhso:SizeGuild ; rdfs:label "SMALL" .
+awhso:SizeMedium a awhso:SizeGuild ; rdfs:label "MEDIUM" .
+awhso:SizeLarge a awhso:SizeGuild ; rdfs:label "LARGE" .
+awhso:SizeUnknown a awhso:SizeGuild ; rdfs:label "UNKNOWN" .
+
+awhso:CompEngine a awhso:ComponentFamily ; rdfs:label "engine" .
+awhso:CompWindshield a awhso:ComponentFamily ; rdfs:label "windshield" .
+awhso:CompFuselage a awhso:ComponentFamily ; rdfs:label "fuselage" .
+awhso:CompWingRotor a awhso:ComponentFamily ; rdfs:label "wing_rotor" .
+awhso:CompNose a awhso:ComponentFamily ; rdfs:label "nose" .
+awhso:CompRadome a awhso:ComponentFamily ; rdfs:label "radome" .
+awhso:CompLandingGear a awhso:ComponentFamily ; rdfs:label "landing_gear" .
+awhso:CompTail a awhso:ComponentFamily ; rdfs:label "tail" .
+awhso:CompPropeller a awhso:ComponentFamily ; rdfs:label "propeller" .
+awhso:CompLights a awhso:ComponentFamily ; rdfs:label "lights" .
+awhso:CompOther a awhso:ComponentFamily ; rdfs:label "other" .
+
+awhso:Norm_139_337_f2 a awhso:RegulationClause ;
+    rdfs:label "14 CFR 139.337(f)(2)" ;
+    awhso:labelText "Prioritized wildlife population management, habitat modification, and land-use actions with target dates." ;
+    awhso:licensesAction awhso:ActionType_DrainStandingWater , awhso:ActionType_GrassHeightManagement , awhso:ActionType_ExclusionFencing , awhso:ActionType_WasteManagement , awhso:ActionType_Harassment , awhso:ActionType_LethalControl , awhso:ActionType_LandUseAgreement .
+
+awhso:Norm_AC_150_5200_33 a awhso:AdvisoryCircular ;
+    rdfs:label "FAA AC 150/5200-33" ;
+    awhso:labelText "Hazardous wildlife attractants on or near airports." .
+
+awhso:Norm_AC_150_5200_38 a awhso:AdvisoryCircular ;
+    rdfs:label "FAA AC 150/5200-38" ;
+    awhso:labelText "Protocol for the conduct and review of Wildlife Hazard Site Visits, Assessments, and Management Plans." .
+
+# Action type individuals used as fillers (not per-airport instances)
+awhso:ActionType_DrainStandingWater a awhso:DrainStandingWater , awhso:HabitatAction ; rdfs:label "DrainStandingWater" .
+awhso:ActionType_GrassHeightManagement a awhso:GrassHeightManagement , awhso:HabitatAction ; rdfs:label "GrassHeightManagement" .
+awhso:ActionType_ExclusionFencing a awhso:ExclusionFencing , awhso:ControlAction ; rdfs:label "ExclusionFencing" .
+awhso:ActionType_WasteManagement a awhso:WasteManagement , awhso:HabitatAction ; rdfs:label "WasteManagement" .
+awhso:ActionType_Harassment a awhso:Harassment , awhso:ControlAction ; rdfs:label "Harassment" .
+awhso:ActionType_LethalControl a awhso:LethalControl , awhso:ControlAction ; rdfs:label "LethalControl" .
+awhso:ActionType_LandUseAgreement a awhso:LandUseAgreement , awhso:HabitatAction ; rdfs:label "LandUseAgreement" .
+awhso:ActionType_DrainStandingWater awhso:preconditionAttractant awhso:AttractantClass_StandingWater .
+awhso:ActionType_GrassHeightManagement awhso:preconditionAttractant awhso:AttractantClass_Grassland .
+awhso:ActionType_WasteManagement awhso:preconditionAttractant awhso:AttractantClass_WasteFacility .
+awhso:ActionType_LandUseAgreement awhso:preconditionAttractant awhso:AttractantClass_Agriculture .
+
+awhso:AttractantClass_StandingWater a awhso:StandingWater ; rdfs:label "StandingWater" .
+awhso:AttractantClass_Grassland a awhso:Grassland ; rdfs:label "Grassland" .
+awhso:AttractantClass_WasteFacility a awhso:WasteFacility ; rdfs:label "WasteFacility" .
+awhso:AttractantClass_Wetland a awhso:Wetland ; rdfs:label "Wetland" .
+awhso:AttractantClass_Agriculture a awhso:Agriculture ; rdfs:label "Agriculture" .
+awhso:AttractantClass_PerchStructure a awhso:PerchStructure ; rdfs:label "PerchStructure" .
+
+# ----- second archive: sparse maintenance events (same slots and action edges) -----
+awhso:DefectEvent a owl:Class ; rdfs:subClassOf awhso:Event ; rdfs:label "DefectEvent" .
+awhso:Operator a owl:Class ; rdfs:subClassOf awhso:Artifact ; rdfs:label "Operator" .
+awhso:MaintenanceAction a owl:Class ; rdfs:subClassOf awhso:Action ; rdfs:label "MaintenanceAction" .
+awhso:Repair a owl:Class ; rdfs:subClassOf awhso:MaintenanceAction ; rdfs:label "Repair" .
+awhso:Replace a owl:Class ; rdfs:subClassOf awhso:MaintenanceAction ; rdfs:label "Replace" .
+awhso:Inspect a owl:Class ; rdfs:subClassOf awhso:MaintenanceAction ; rdfs:label "Inspect" .
+awhso:OperationalCheck a owl:Class ; rdfs:subClassOf awhso:MaintenanceAction ; rdfs:label "OperationalCheck" .
+awhso:Secure a owl:Class ; rdfs:subClassOf awhso:MaintenanceAction ; rdfs:label "Secure" .
+awhso:AircraftMaintenanceManual a owl:Class ; rdfs:subClassOf awhso:Norm ; rdfs:label "AircraftMaintenanceManual" .
+
+awhso:occursAtOperator a owl:ObjectProperty ; rdfs:domain awhso:DefectEvent ; rdfs:range awhso:Operator .
+awhso:operatorId a owl:DatatypeProperty ; rdfs:range xsd:string .
+awhso:jascCode a owl:DatatypeProperty ; rdfs:range xsd:string .
+awhso:ataChapter a owl:DatatypeProperty ; rdfs:range xsd:string .
+awhso:natureCode a owl:DatatypeProperty ; rdfs:range xsd:string .
+
+awhso:ActionType_Repair a awhso:Repair , awhso:ControlAction ; rdfs:label "Repair" .
+awhso:ActionType_Replace a awhso:Replace , awhso:ControlAction ; rdfs:label "Replace" .
+awhso:ActionType_Inspect a awhso:Inspect , awhso:ControlAction ; rdfs:label "Inspect" .
+awhso:ActionType_OperationalCheck a awhso:OperationalCheck , awhso:ControlAction ; rdfs:label "OperationalCheck" .
+awhso:ActionType_Secure a awhso:Secure , awhso:ControlAction ; rdfs:label "Secure" .
+awhso:Norm_AMM a awhso:AircraftMaintenanceManual ; rdfs:label "Aircraft Maintenance Manual" .
