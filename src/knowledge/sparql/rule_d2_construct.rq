@@ -1,0 +1,18 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+# D2. Documented control action (no attractant precondition), no local supporting event.
+CONSTRUCT {
+  ?g a awhso:PlanEventDisagreement ;
+     awhso:aboutSite ?site ;
+     awhso:aboutAction ?act ;
+     awhso:disagreementKind "control_documented_no_pathway" .
+}
+WHERE {
+  ?site awhso:documentsAction ?act .
+  FILTER NOT EXISTS { ?act awhso:preconditionAttractant ?clsInd . }
+  FILTER NOT EXISTS {
+    { ?e awhso:occursAtAirport ?site } UNION { ?e awhso:occursAtOperator ?site }
+    ?e awhso:supportsAction ?act .
+  }
+  BIND(IRI(CONCAT("https://w3id.org/awhso#gap_d2_", STRAFTER(STR(?site), "#"), "_", STRAFTER(STR(?act), "#"))) AS ?g)
+}
