@@ -1,0 +1,16 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+CONSTRUCT {
+  ?g a awhso:PlanEventDisagreement ;
+     awhso:aboutSite ?site ;
+     awhso:aboutAction ?act ;
+     awhso:disagreementKind "pathway_omitted_attractant_absent" .
+}
+WHERE {
+  ?e awhso:supportsAction ?act .
+  { ?e awhso:occursAtAirport ?site } UNION { ?e awhso:occursAtOperator ?site }
+  ?act a awhso:HabitatAction .
+  ?site awhso:undocumentedAction ?act .
+  ?site awhso:preconditionObjectAbsent ?act .
+  BIND(IRI(CONCAT("https://w3id.org/awhso#gap_d3a_", STRAFTER(STR(?site), "#"), "_", STRAFTER(STR(?act), "#"))) AS ?g)
+}
