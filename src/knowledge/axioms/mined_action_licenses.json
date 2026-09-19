@@ -1,0 +1,1346 @@
+{
+  "comment": "Mined from AC 150/5200-33 lexicon and NWSD cells (min 5 damaged, damage rate >= 0.05).",
+  "action_precondition": {
+    "DrainStandingWater": "StandingWater",
+    "GrassHeightManagement": "Grassland",
+    "WasteManagement": "WasteFacility",
+    "ExclusionFencing": "PerchStructure",
+    "LandUseAgreement": "Agriculture"
+  },
+  "pathway_rules": [
+    {
+      "id": "M_LARGE_arrival_nose",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 601,
+      "n_damaged": 165,
+      "damage_rate": 0.2745,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_arrival_engine",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "WasteFacility",
+        "Grassland",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 2662,
+      "n_damaged": 594,
+      "damage_rate": 0.2231,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_arrival_landing_gear",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "WasteFacility",
+        "Grassland",
+        "Agriculture",
+        "StandingWater",
+        "Wetland"
+      ],
+      "actions": [
+        "Harassment",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement",
+        "DrainStandingWater"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 1550,
+      "n_damaged": 127,
+      "damage_rate": 0.0819,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_departure_radome",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "WasteFacility",
+        "Grassland",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 1467,
+      "n_damaged": 228,
+      "damage_rate": 0.1554,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_departure_nose",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "WasteFacility",
+        "Grassland",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "DrainStandingWater",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 1665,
+      "n_damaged": 98,
+      "damage_rate": 0.0589,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_arrival_wing_rotor",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 1233,
+      "n_damaged": 602,
+      "damage_rate": 0.4882,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_arrival_fuselage",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "fuselage",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 661,
+      "n_damaged": 147,
+      "damage_rate": 0.2224,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_arrival_other",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 644,
+      "n_damaged": 182,
+      "damage_rate": 0.2826,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_departure_engine",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "WasteFacility",
+        "Grassland",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 2044,
+      "n_damaged": 1097,
+      "damage_rate": 0.5367,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_departure_lights",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "WasteFacility",
+        "Grassland",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 65,
+      "n_damaged": 51,
+      "damage_rate": 0.7846,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_arrival_radome",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "WasteFacility",
+        "Grassland",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 3795,
+      "n_damaged": 438,
+      "damage_rate": 0.1154,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_departure_windshield",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "windshield",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 329,
+      "n_damaged": 30,
+      "damage_rate": 0.0912,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_departure_wing_rotor",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "PerchStructure",
+        "Grassland"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 468,
+      "n_damaged": 268,
+      "damage_rate": 0.5726,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_departure_tail",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "PerchStructure",
+        "Grassland"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 82,
+      "n_damaged": 38,
+      "damage_rate": 0.4634,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_departure_wing_rotor",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "WasteFacility",
+        "Grassland",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 938,
+      "n_damaged": 252,
+      "damage_rate": 0.2687,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_arrival_nose",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "WasteFacility",
+        "Grassland",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "DrainStandingWater",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 3820,
+      "n_damaged": 236,
+      "damage_rate": 0.0618,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_departure_lights",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "PerchStructure",
+        "Grassland",
+        "StandingWater",
+        "Wetland"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "DrainStandingWater"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 33,
+      "n_damaged": 30,
+      "damage_rate": 0.9091,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_arrival_wing_rotor",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "WasteFacility",
+        "Grassland",
+        "Agriculture",
+        "StandingWater",
+        "Wetland"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement",
+        "DrainStandingWater"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 2923,
+      "n_damaged": 638,
+      "damage_rate": 0.2183,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_arrival_propeller",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "WasteFacility",
+        "Grassland",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 213,
+      "n_damaged": 25,
+      "damage_rate": 0.1174,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_SMALL_departure_engine",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland",
+        "WasteFacility",
+        "PerchStructure",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "GrassHeightManagement",
+        "WasteManagement",
+        "ExclusionFencing",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 2066,
+      "n_damaged": 478,
+      "damage_rate": 0.2314,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_departure_fuselage",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "fuselage",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 344,
+      "n_damaged": 81,
+      "damage_rate": 0.2355,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_arrival_engine",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 794,
+      "n_damaged": 351,
+      "damage_rate": 0.4421,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_arrival_propeller",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 86,
+      "n_damaged": 18,
+      "damage_rate": 0.2093,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_arrival_tail",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 188,
+      "n_damaged": 97,
+      "damage_rate": 0.516,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_SMALL_departure_wing_rotor",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland",
+        "WasteFacility"
+      ],
+      "actions": [
+        "Harassment",
+        "GrassHeightManagement",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 1992,
+      "n_damaged": 104,
+      "damage_rate": 0.0522,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_departure_engine",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 614,
+      "n_damaged": 456,
+      "damage_rate": 0.7427,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_departure_other",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "WasteFacility",
+        "Grassland",
+        "Agriculture",
+        "StandingWater",
+        "Wetland"
+      ],
+      "actions": [
+        "Harassment",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement",
+        "DrainStandingWater"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 2044,
+      "n_damaged": 164,
+      "damage_rate": 0.0802,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_arrival_radome",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 589,
+      "n_damaged": 271,
+      "damage_rate": 0.4601,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_departure_landing_gear",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland",
+        "PerchStructure",
+        "StandingWater",
+        "Wetland"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "GrassHeightManagement",
+        "ExclusionFencing",
+        "DrainStandingWater"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 438,
+      "n_damaged": 52,
+      "damage_rate": 0.1187,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_arrival_windshield",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "windshield",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 576,
+      "n_damaged": 68,
+      "damage_rate": 0.1181,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_SMALL_departure_lights",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland",
+        "WasteFacility",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "GrassHeightManagement",
+        "WasteManagement",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 87,
+      "n_damaged": 49,
+      "damage_rate": 0.5632,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_departure_other",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland",
+        "PerchStructure",
+        "StandingWater",
+        "Wetland"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "GrassHeightManagement",
+        "ExclusionFencing",
+        "DrainStandingWater"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 491,
+      "n_damaged": 104,
+      "damage_rate": 0.2118,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_arrival_other",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "WasteFacility",
+        "Grassland",
+        "Agriculture",
+        "StandingWater",
+        "Wetland"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement",
+        "DrainStandingWater"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 2415,
+      "n_damaged": 243,
+      "damage_rate": 0.1006,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_departure_radome",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 304,
+      "n_damaged": 155,
+      "damage_rate": 0.5099,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_departure_propeller",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "PerchStructure",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "WasteManagement",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 131,
+      "n_damaged": 8,
+      "damage_rate": 0.0611,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_arrival_tail",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "WasteFacility",
+        "Grassland",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 293,
+      "n_damaged": 114,
+      "damage_rate": 0.3891,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_SMALL_arrival_lights",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "Agriculture",
+        "Grassland"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "LandUseAgreement",
+        "GrassHeightManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 207,
+      "n_damaged": 101,
+      "damage_rate": 0.4879,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_SMALL_arrival_tail",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "GrassHeightManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 374,
+      "n_damaged": 46,
+      "damage_rate": 0.123,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_departure_tail",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "WasteFacility",
+        "Grassland",
+        "Agriculture"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 130,
+      "n_damaged": 40,
+      "damage_rate": 0.3077,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_arrival_landing_gear",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland",
+        "PerchStructure",
+        "StandingWater",
+        "Wetland"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "GrassHeightManagement",
+        "ExclusionFencing",
+        "DrainStandingWater"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 956,
+      "n_damaged": 116,
+      "damage_rate": 0.1213,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_departure_nose",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 331,
+      "n_damaged": 120,
+      "damage_rate": 0.3625,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_departure_landing_gear",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "WasteFacility",
+        "Grassland",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "DrainStandingWater",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 505,
+      "n_damaged": 50,
+      "damage_rate": 0.099,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_arrival_lights",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "WasteFacility",
+        "Grassland",
+        "Agriculture",
+        "StandingWater",
+        "Wetland"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement",
+        "DrainStandingWater"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 203,
+      "n_damaged": 160,
+      "damage_rate": 0.7882,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_SMALL_departure_tail",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland",
+        "WasteFacility"
+      ],
+      "actions": [
+        "Harassment",
+        "GrassHeightManagement",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 158,
+      "n_damaged": 15,
+      "damage_rate": 0.0949,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_MEDIUM_ground_engine",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "WasteFacility",
+        "Grassland",
+        "Agriculture",
+        "StandingWater",
+        "Wetland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "WasteManagement",
+        "GrassHeightManagement",
+        "LandUseAgreement",
+        "DrainStandingWater",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 45,
+      "n_damaged": 8,
+      "damage_rate": 0.1778,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_departure_propeller",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "GrassHeightManagement",
+        "ExclusionFencing"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 48,
+      "n_damaged": 16,
+      "damage_rate": 0.3333,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    },
+    {
+      "id": "M_LARGE_arrival_lights",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "PerchStructure",
+        "Grassland"
+      ],
+      "actions": [
+        "Harassment",
+        "LethalControl",
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "n": 75,
+      "n_damaged": 64,
+      "damage_rate": 0.8533,
+      "provenance": "AC150-5200-33_lexicon+NWSD_cell"
+    }
+  ]
+}
