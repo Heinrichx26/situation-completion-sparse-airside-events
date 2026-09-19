@@ -1,0 +1,11 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+# Total status assignment on the action layer after C.
+SELECT ?status (COUNT(?slot) AS ?n)
+WHERE {
+  ?slot a awhso:Slot ;
+        awhso:slotLayer "action" ;
+        awhso:slotStatus ?status .
+}
+GROUP BY ?status
+ORDER BY ?status
