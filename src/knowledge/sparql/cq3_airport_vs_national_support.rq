@@ -1,0 +1,24 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# CQ3. For a case airport, which recommended actions have on-airport event support
+# versus national-only support?
+SELECT ?actionLabel (COUNT(DISTINCT ?local) AS ?localEvents) (COUNT(DISTINCT ?national) AS ?nationalEvents)
+WHERE {
+  BIND("SEA" AS ?caseId)
+  ?case awhso:airportId ?caseId ;
+        awhso:recommendsAction ?act .
+  ?act rdfs:label ?actionLabel .
+  OPTIONAL {
+    ?local a awhso:StrikeEvent ;
+           awhso:occursAtAirport ?case ;
+           awhso:supportsAction ?act .
+  }
+  OPTIONAL {
+    ?national a awhso:StrikeEvent ;
+              awhso:supportsAction ?actType .
+    ?actType rdfs:label ?actionLabel .
+  }
+}
+GROUP BY ?actionLabel
+ORDER BY ?actionLabel
