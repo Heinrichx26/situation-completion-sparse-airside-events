@@ -1,0 +1,17 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# SDR-CQ4. Documented SWAA action types with no supporting defect event.
+SELECT ?actionLabel
+WHERE {
+  BIND("SWAA" AS ?caseId)
+  ?op awhso:operatorId ?caseId ;
+      awhso:documentsAction ?act .
+  ?act rdfs:label ?actionLabel .
+  FILTER NOT EXISTS {
+    ?e a awhso:DefectEvent ;
+       awhso:occursAtOperator ?op ;
+       awhso:supportsAction ?act .
+  }
+}
+ORDER BY ?actionLabel
