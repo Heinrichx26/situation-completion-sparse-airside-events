@@ -1,0 +1,9 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+SELECT ?kind (COUNT(?g) AS ?n)
+WHERE {
+  ?g a awhso:PlanEventDisagreement ;
+     awhso:disagreementKind ?kind .
+}
+GROUP BY ?kind
+ORDER BY ?kind
