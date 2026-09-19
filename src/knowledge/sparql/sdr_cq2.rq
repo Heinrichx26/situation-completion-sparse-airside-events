@@ -1,0 +1,10 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT (COUNT(DISTINCT ?actionLabel) AS ?n)
+WHERE {
+  ?e a awhso:DefectEvent ;
+     awhso:supportsAction ?act .
+  ?act rdfs:label ?actionLabel ;
+       awhso:licensedBy ?norm .
+}
