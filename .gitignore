@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+data/raw/
+results/
+*.ttl.bak
+.DS_Store
