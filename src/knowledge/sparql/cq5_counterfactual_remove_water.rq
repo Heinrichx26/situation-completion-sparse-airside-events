@@ -1,0 +1,20 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# CQ5. If standing water is removed, which damage-supported actions lose their
+# environmental precondition?
+SELECT DISTINCT ?airportId ?actionLabel (COUNT(DISTINCT ?e) AS ?supportedEvents)
+WHERE {
+  ?airport awhso:airportId ?airportId ;
+           awhso:recommendsAction ?act ;
+           awhso:inferredAttractant awhso:AttractantClass_StandingWater .
+  ?act rdfs:label ?actionLabel ;
+       awhso:preconditionAttractant awhso:AttractantClass_StandingWater .
+  ?e a awhso:StrikeEvent ;
+     awhso:occursAtAirport ?airport ;
+     awhso:damaged true ;
+     awhso:supportsAction ?actType .
+  ?actType rdfs:label ?actionLabel .
+}
+GROUP BY ?airportId ?actionLabel
+ORDER BY ?airportId ?actionLabel
