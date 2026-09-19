@@ -1,0 +1,22 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+# D1. Documented habitat action, observed attractant, no local supporting event.
+CONSTRUCT {
+  ?g a awhso:PlanEventDisagreement ;
+     awhso:aboutSite ?site ;
+     awhso:aboutAction ?act ;
+     awhso:disagreementKind "habitat_documented_attractant_present_no_pathway" .
+}
+WHERE {
+  ?site awhso:documentsAction ?act .
+  ?act awhso:preconditionAttractant ?clsInd .
+  ?clsInd a ?attrClass .
+  ?site awhso:observedAttractant ?obj .
+  ?obj a ?attrClass .
+  FILTER NOT EXISTS {
+    { ?e awhso:occursAtAirport ?site } UNION { ?e awhso:occursAtOperator ?site }
+    ?e awhso:supportsAction ?act .
+  }
+  BIND(IRI(CONCAT("https://w3id.org/awhso#gap_d1_", STRAFTER(STR(?site), "#"), "_", STRAFTER(STR(?act), "#"))) AS ?g)
+}
