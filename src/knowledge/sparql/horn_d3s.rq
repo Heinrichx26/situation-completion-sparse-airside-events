@@ -1,0 +1,16 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+CONSTRUCT {
+  ?g a awhso:PlanEventDisagreement ;
+     awhso:aboutSite ?site ;
+     awhso:aboutAction ?act ;
+     awhso:disagreementKind "pathway_omitted_control_no_plan" .
+}
+WHERE {
+  ?e awhso:supportsAction ?act .
+  { ?e awhso:occursAtAirport ?site } UNION { ?e awhso:occursAtOperator ?site }
+  ?act a awhso:ControlAction .
+  ?site awhso:undocumentedAction ?act .
+  ?site awhso:emptyPlan true .
+  BIND(IRI(CONCAT("https://w3id.org/awhso#gap_d3cs_", STRAFTER(STR(?site), "#"), "_", STRAFTER(STR(?act), "#"))) AS ?g)
+}
