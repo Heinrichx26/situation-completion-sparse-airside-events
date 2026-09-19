@@ -1,0 +1,1390 @@
+{
+  "comment": "OC-RAG-KGC tau=0.34 MiniLM retrieval bound to AWHSO TBox. Rare ground-large cells completed from AC 150/5200-38.",
+  "action_precondition": {
+    "DrainStandingWater": "StandingWater",
+    "GrassHeightManagement": "Grassland",
+    "WasteManagement": "WasteFacility",
+    "ExclusionFencing": "PerchStructure",
+    "LandUseAgreement": "Agriculture"
+  },
+  "pathway_rules": [
+    {
+      "id": "RAG_LARGE_arrival_nose",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_arrival_engine",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_arrival_landing_gear",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_departure_radome",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_departure_nose",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_arrival_wing_rotor",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_arrival_fuselage",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "fuselage",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_arrival_other",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_departure_engine",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_departure_lights",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_arrival_radome",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_departure_windshield",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "windshield",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_departure_wing_rotor",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_departure_tail",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_departure_wing_rotor",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_arrival_nose",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_departure_lights",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_arrival_wing_rotor",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_arrival_propeller",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_SMALL_departure_engine",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_departure_fuselage",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "fuselage",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_arrival_engine",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_arrival_propeller",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_arrival_tail",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_SMALL_departure_wing_rotor",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "PerchStructure"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_departure_engine",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_departure_other",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_arrival_radome",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_departure_landing_gear",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_arrival_windshield",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "windshield",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_SMALL_departure_lights",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_departure_other",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_arrival_other",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_departure_radome",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_departure_propeller",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_SMALL_ground_wing_rotor",
+      "size": "SMALL",
+      "phase": "ground",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_arrival_tail",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_SMALL_arrival_lights",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_SMALL_arrival_tail",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_departure_tail",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_arrival_landing_gear",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_ground_landing_gear",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_departure_nose",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_SMALL_ground_nose",
+      "size": "SMALL",
+      "phase": "ground",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_departure_landing_gear",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_arrival_lights",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_SMALL_departure_tail",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_ground_engine",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_ground_landing_gear",
+      "size": "LARGE",
+      "phase": "ground",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "PerchStructure"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_departure_propeller",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_SMALL_ground_propeller",
+      "size": "SMALL",
+      "phase": "ground",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_arrival_lights",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_SMALL_ground_engine",
+      "size": "SMALL",
+      "phase": "ground",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_ground_other",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_ground_propeller",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_ground_radome",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_SMALL_ground_windshield",
+      "size": "SMALL",
+      "phase": "ground",
+      "component": "windshield",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_ground_engine",
+      "size": "LARGE",
+      "phase": "ground",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "PerchStructure"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_ground_lights",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_MEDIUM_ground_wing_rotor",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_SMALL_ground_lights",
+      "size": "SMALL",
+      "phase": "ground",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "Grassland"
+      ],
+      "actions": [
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    },
+    {
+      "id": "RAG_LARGE_ground_fuselage",
+      "size": "LARGE",
+      "phase": "ground",
+      "component": "fuselage",
+      "requires_damage": true,
+      "attractants": [
+        "PerchStructure"
+      ],
+      "actions": [
+        "ExclusionFencing",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "OC-RAG-KGC"
+    }
+  ]
+}
