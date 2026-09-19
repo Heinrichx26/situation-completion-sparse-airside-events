@@ -1,0 +1,32 @@
+{
+  "airport_id": "DEN",
+  "comment": "Smoke-only WHMP fixture. Replace with a public WHMP PDF extraction before the case-study experiment. Mix of actions that 2024 large/medium engine pathways can support and one stale land-use line.",
+  "lines": [
+    {
+      "id": "DEN-WHMP-01",
+      "action": "DrainStandingWater",
+      "documented": true
+    },
+    {
+      "id": "DEN-WHMP-02",
+      "action": "GrassHeightManagement",
+      "documented": true
+    },
+    {
+      "id": "DEN-WHMP-03",
+      "action": "Harassment",
+      "documented": true
+    },
+    {
+      "id": "DEN-WHMP-04",
+      "action": "WasteManagement",
+      "documented": true
+    },
+    {
+      "id": "DEN-WHMP-05",
+      "action": "LandUseAgreement",
+      "documented": true,
+      "comment": "Stale-line candidate for CQ4 if 2024 DEN events do not fire R6 agriculture/waste pathways."
+    }
+  ]
+}
