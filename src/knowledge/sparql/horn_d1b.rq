@@ -1,0 +1,15 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+CONSTRUCT {
+  ?g a awhso:PlanEventDisagreement ;
+     awhso:aboutSite ?site ;
+     awhso:aboutAction ?act ;
+     awhso:disagreementKind "habitat_documented_attractant_absent_no_pathway" .
+}
+WHERE {
+  ?site awhso:documentsAction ?act .
+  ?act a awhso:HabitatAction .
+  ?site awhso:preconditionObjectAbsent ?act .
+  ?site awhso:localUnsupported ?act .
+  BIND(IRI(CONCAT("https://w3id.org/awhso#gap_d1b_", STRAFTER(STR(?site), "#"), "_", STRAFTER(STR(?act), "#"))) AS ?g)
+}
