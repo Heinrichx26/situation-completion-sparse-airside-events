@@ -1,0 +1,18 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# CQ4. Which documented WHMP lines have no supporting strike event in the window?
+SELECT ?lineId ?actionLabel
+WHERE {
+  ?airport awhso:airportId "SEA" ;
+           awhso:documentsAction ?line .
+  ?line awhso:eventId ?lineId ;
+        rdfs:label ?actionLabel .
+  FILTER NOT EXISTS {
+    ?e a awhso:StrikeEvent ;
+       awhso:occursAtAirport ?airport ;
+       awhso:supportsAction ?actType .
+    ?actType rdfs:label ?actionLabel .
+  }
+}
+ORDER BY ?lineId
