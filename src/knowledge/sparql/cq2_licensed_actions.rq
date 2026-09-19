@@ -1,0 +1,26 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# CQ2. Which 139.337 action types do those objects license?
+SELECT DISTINCT ?airportId ?actionLabel ?normLabel ?status
+WHERE {
+  ?e a awhso:StrikeEvent ;
+     awhso:hasSizeGuild awhso:SizeLarge ;
+     awhso:inPhase awhso:PhaseDeparture ;
+     awhso:strikesComponent awhso:CompEngine ;
+     awhso:damaged true ;
+     awhso:occursAtAirport ?airport ;
+     awhso:supportsAction ?act .
+  ?airport awhso:airportId ?airportId .
+  ?act rdfs:label ?actionLabel ;
+       awhso:licensedBy ?norm .
+  ?norm rdfs:label ?normLabel .
+  OPTIONAL {
+    ?sit awhso:hasEvent ?e ;
+         awhso:hasSlot ?slot .
+    ?slot awhso:slotFiller ?act ;
+          awhso:slotLayer "action" ;
+          awhso:slotStatus ?status .
+  }
+}
+ORDER BY ?airportId ?actionLabel
