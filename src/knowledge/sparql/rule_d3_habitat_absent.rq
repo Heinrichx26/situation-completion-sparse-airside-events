@@ -1,0 +1,21 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+# D3-no-object. Local pathway licenses a habitat action; attractant not observed; plan omits the action.
+CONSTRUCT {
+  ?g a awhso:PlanEventDisagreement ;
+     awhso:aboutSite ?site ;
+     awhso:aboutAction ?act ;
+     awhso:disagreementKind "pathway_omitted_attractant_absent" .
+}
+WHERE {
+  { ?e awhso:occursAtAirport ?site } UNION { ?e awhso:occursAtOperator ?site }
+  ?e awhso:supportsAction ?act .
+  ?act awhso:preconditionAttractant ?clsInd .
+  ?clsInd a ?attrClass .
+  FILTER NOT EXISTS {
+    ?site awhso:observedAttractant ?obj .
+    ?obj a ?attrClass .
+  }
+  FILTER NOT EXISTS { ?site awhso:documentsAction ?act . }
+  BIND(IRI(CONCAT("https://w3id.org/awhso#gap_d3a_", STRAFTER(STR(?site), "#"), "_", STRAFTER(STR(?act), "#"))) AS ?g)
+}
