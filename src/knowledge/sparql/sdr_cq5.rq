@@ -1,0 +1,13 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# SDR-CQ5. Action types licensed on ATA-32 (landing gear) events.
+# Retracting that artifact chapter removes these licenses from gear pathways.
+SELECT DISTINCT ?actionLabel
+WHERE {
+  ?e a awhso:DefectEvent ;
+     awhso:ataChapter "32" ;
+     awhso:supportsAction ?act .
+  ?act rdfs:label ?actionLabel .
+}
+ORDER BY ?actionLabel
