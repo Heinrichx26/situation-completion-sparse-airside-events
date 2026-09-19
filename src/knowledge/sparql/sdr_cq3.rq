@@ -1,0 +1,22 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# SDR-CQ3. For operator SWAA, documented vs cell-supported actions.
+SELECT ?actionLabel (COUNT(DISTINCT ?local) AS ?localEvents) (COUNT(DISTINCT ?doc) AS ?documented)
+WHERE {
+  BIND("SWAA" AS ?caseId)
+  ?case awhso:operatorId ?caseId ;
+        awhso:recommendsAction ?act .
+  ?act rdfs:label ?actionLabel .
+  OPTIONAL {
+    ?local a awhso:DefectEvent ;
+           awhso:occursAtOperator ?case ;
+           awhso:supportsAction ?act .
+  }
+  OPTIONAL {
+    ?case awhso:documentsAction ?doc .
+    ?doc rdfs:label ?actionLabel .
+  }
+}
+GROUP BY ?actionLabel
+ORDER BY ?actionLabel
