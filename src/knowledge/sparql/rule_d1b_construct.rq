@@ -1,0 +1,23 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+# D1'. Documented habitat action, attractant class not observed, no local supporting event.
+CONSTRUCT {
+  ?g a awhso:PlanEventDisagreement ;
+     awhso:aboutSite ?site ;
+     awhso:aboutAction ?act ;
+     awhso:disagreementKind "habitat_documented_attractant_absent_no_pathway" .
+}
+WHERE {
+  ?site awhso:documentsAction ?act .
+  ?act awhso:preconditionAttractant ?clsInd .
+  ?clsInd a ?attrClass .
+  FILTER NOT EXISTS {
+    ?site awhso:observedAttractant ?obj .
+    ?obj a ?attrClass .
+  }
+  FILTER NOT EXISTS {
+    { ?e awhso:occursAtAirport ?site } UNION { ?e awhso:occursAtOperator ?site }
+    ?e awhso:supportsAction ?act .
+  }
+  BIND(IRI(CONCAT("https://w3id.org/awhso#gap_d1b_", STRAFTER(STR(?site), "#"), "_", STRAFTER(STR(?act), "#"))) AS ?g)
+}
