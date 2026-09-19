@@ -1,0 +1,65 @@
+{
+  "comment": "Documented WHMP/WHA/WHSV action lines extracted from public PDFs. Used as B1 baseline for case airports.",
+  "airports": {
+    "SEA": {
+      "name": "Seattle-Tacoma International Airport",
+      "document": "SEA Wildlife Hazard Management Plan (Appendix 1 of the SEA Airport Certification Manual), 28 March 2022, FAA-approved 29 March 2022",
+      "url": "https://www.portseattle.org/sites/default/files/2023-12/SEA%20Wildlife%20Hazard%20Management%20Plan%20v2022.pdf",
+      "kind": "WHMP",
+      "in_top120": true,
+      "lines": [
+        {"id": "SEA-01", "action": "Harassment", "text": "Zero-tolerance wildlife control on the airfield for hazardous species"},
+        {"id": "SEA-02", "action": "LethalControl", "text": "European starling live-trapping and control; rock pigeon trapping"},
+        {"id": "SEA-03", "action": "Harassment", "text": "Raptor Strike Avoidance Program: trap, mark, and translocate raptors"},
+        {"id": "SEA-04", "action": "DrainStandingWater", "text": "Clear and maintain ditches throughout airfield to enhance drainage"},
+        {"id": "SEA-05", "action": "DrainStandingWater", "text": "Cover stormwater and industrial wastewater/glycol ponds with netting and floating balls"},
+        {"id": "SEA-06", "action": "ExclusionFencing", "text": "Coyote-deterrent AOA perimeter fence with buried fabric"},
+        {"id": "SEA-07", "action": "GrassHeightManagement", "text": "Cut airfield grass more frequently; coordinate City of SeaTac mowing"},
+        {"id": "SEA-08", "action": "LandUseAgreement", "text": "End Tyee Valley Golf Course lease; convert to shrub-scrub"},
+        {"id": "SEA-09", "action": "WasteManagement", "text": "Trash, debris, and handouts control (prey-base management)"},
+        {"id": "SEA-10", "action": "DrainStandingWater", "text": "Convert Lora Lake and adjacent open water to shrub-scrub habitat"}
+      ]
+    },
+    "BJJ": {
+      "name": "Wayne County Airport (Smithville, Ohio)",
+      "document": "Wildlife Hazard Assessment Final Report, Wayne County Airport, December 2014 (CHA 27243)",
+      "url": "https://www.wayneairport.org/sites/default/files/AIP-2013%20BJJ%20Wildlife%20Hazard%20Assessment.pdf",
+      "kind": "WHA",
+      "in_top120": false,
+      "lines": [
+        {"id": "BJJ-01", "action": "Harassment", "text": "Zero-tolerance policy: immediate harassment of deer, coyotes, geese, raptors, starlings, blackbirds"},
+        {"id": "BJJ-02", "action": "LethalControl", "text": "Lethal reinforcement with depredation permits when required"},
+        {"id": "BJJ-03", "action": "GrassHeightManagement", "text": "Mow at least monthly in growing season; target height 7-10 inches"},
+        {"id": "BJJ-04", "action": "LandUseAgreement", "text": "Replace grain crops with hay; early harvest; no no-till residue"},
+        {"id": "BJJ-05", "action": "ExclusionFencing", "text": "Perimeter wildlife fence not currently justified; install only if deer/coyote AOA use increases"}
+      ]
+    },
+    "GIF": {
+      "name": "Winter Haven Gilbert Airport",
+      "document": "Winter Haven Gilbert Airport Wildlife Hazard Site Visit, 6 November 2018",
+      "url": "https://mywinterhaven.com/DocumentCenter/View/672/2018-Wildlife-Hazard-Site-Visit-PDF",
+      "kind": "WHSV",
+      "in_top120": false,
+      "lines": [
+        {"id": "GIF-01", "action": "ExclusionFencing", "text": "Repair AOA exclusion gate gaps to less than 6 inches; grate openings"},
+        {"id": "GIF-02", "action": "GrassHeightManagement", "text": "Turf management; avoid ruts that pond water when mowing wet areas"},
+        {"id": "GIF-03", "action": "DrainStandingWater", "text": "Drain standing stormwater; detention ponds to empty within 48 hours"},
+        {"id": "GIF-04", "action": "DrainStandingWater", "text": "Six surrounding lakes/waterbodies as waterfowl attractants in approach airspace"}
+      ]
+    },
+    "0B5": {
+      "name": "Turners Falls Municipal Airport",
+      "document": "Wildlife Hazard Management Plan, Turners Falls Municipal Airport (0B5), 14 July 2022, Stantec",
+      "url": "https://montague-ma.gov/files/Wildlife_Hazard_Management_Plan_2022.pdf",
+      "kind": "WHMP",
+      "in_top120": false,
+      "lines": [
+        {"id": "0B5-01", "action": "ExclusionFencing", "text": "Fence for large mammal control; inspect fence and gates"},
+        {"id": "0B5-02", "action": "GrassHeightManagement", "text": "Maintain grass height 2-10 inches; mowing plan for sandplain grasslands"},
+        {"id": "0B5-03", "action": "Harassment", "text": "Pyrotechnic devices to harass Canada geese; proactive harassment"},
+        {"id": "0B5-04", "action": "LethalControl", "text": "Lethal action when necessary; take Canada geese under permit"},
+        {"id": "0B5-05", "action": "DrainStandingWater", "text": "Exclude waterfowl from Green Pond and Lake Pleasant with water department"}
+      ]
+    }
+  }
+}
