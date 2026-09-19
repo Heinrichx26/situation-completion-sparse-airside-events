@@ -1,0 +1,19 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+# D2-mismatch. Control action documented; site has events; none license this control.
+CONSTRUCT {
+  ?g a awhso:PlanEventDisagreement ;
+     awhso:aboutSite ?site ;
+     awhso:aboutAction ?act ;
+     awhso:disagreementKind "control_documented_pathway_mismatch" .
+}
+WHERE {
+  ?site awhso:documentsAction ?act .
+  ?site awhso:hasEventLog true .
+  FILTER NOT EXISTS { ?act awhso:preconditionAttractant ?c . }
+  FILTER NOT EXISTS {
+    { ?e awhso:occursAtAirport ?site } UNION { ?e awhso:occursAtOperator ?site }
+    ?e awhso:supportsAction ?act .
+  }
+  BIND(IRI(CONCAT("https://w3id.org/awhso#gap_d2m_", STRAFTER(STR(?site), "#"), "_", STRAFTER(STR(?act), "#"))) AS ?g)
+}
