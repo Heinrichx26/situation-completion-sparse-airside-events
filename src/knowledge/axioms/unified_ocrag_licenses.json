@@ -1,0 +1,2499 @@
+{
+  "comment": "Unified OC-RAG tau=0.34. Rare cells: nd>=1 and AC in top retrieved chunks. No pathway-specific branch.",
+  "pathway_rules": [
+    {
+      "id": "U_LARGE_arrival_nose",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_arrival_engine",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_arrival_landing_gear",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_arrival_radome",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_arrival_nose",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_departure_radome",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_departure_nose",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_arrival_wing_rotor",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_arrival_fuselage",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "fuselage",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_arrival_other",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_departure_engine",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_departure_lights",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_arrival_fuselage",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "fuselage",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_arrival_radome",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_departure_fuselage",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "fuselage",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_departure_windshield",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "windshield",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_departure_wing_rotor",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_departure_tail",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_arrival_wing_rotor",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_departure_wing_rotor",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_arrival_nose",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_departure_lights",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_departure_nose",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_arrival_wing_rotor",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_arrival_propeller",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_arrival_fuselage",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "fuselage",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_departure_engine",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_departure_fuselage",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "fuselage",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_departure_fuselage",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "fuselage",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_arrival_engine",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_arrival_propeller",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_arrival_tail",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_departure_radome",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_departure_wing_rotor",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_departure_landing_gear",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_departure_engine",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_departure_other",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_arrival_radome",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_arrival_windshield",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "windshield",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_departure_landing_gear",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_arrival_windshield",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "windshield",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_departure_windshield",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "windshield",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_departure_windshield",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "windshield",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_arrival_windshield",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "windshield",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_arrival_engine",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_departure_propeller",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_departure_lights",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_departure_other",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_arrival_other",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_departure_radome",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_departure_propeller",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_arrival_other",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_ground_wing_rotor",
+      "size": "SMALL",
+      "phase": "ground",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_arrival_tail",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_arrival_landing_gear",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_arrival_lights",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_arrival_tail",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_departure_tail",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_arrival_propeller",
+      "size": "SMALL",
+      "phase": "arrival",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_departure_other",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_arrival_landing_gear",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_ground_landing_gear",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_departure_nose",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_ground_nose",
+      "size": "SMALL",
+      "phase": "ground",
+      "component": "nose",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_departure_landing_gear",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_arrival_lights",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_ground_other",
+      "size": "LARGE",
+      "phase": "ground",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_departure_tail",
+      "size": "SMALL",
+      "phase": "departure",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_ground_engine",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_ground_landing_gear",
+      "size": "LARGE",
+      "phase": "ground",
+      "component": "landing_gear",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_departure_propeller",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_ground_propeller",
+      "size": "SMALL",
+      "phase": "ground",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_arrival_lights",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_ground_propeller",
+      "size": "LARGE",
+      "phase": "ground",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_ground_engine",
+      "size": "SMALL",
+      "phase": "ground",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_ground_other",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "other",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_ground_propeller",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "propeller",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_ground_radome",
+      "size": "LARGE",
+      "phase": "ground",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_ground_radome",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "radome",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_ground_windshield",
+      "size": "SMALL",
+      "phase": "ground",
+      "component": "windshield",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_ground_engine",
+      "size": "LARGE",
+      "phase": "ground",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_ground_lights",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_ground_wing_rotor",
+      "size": "LARGE",
+      "phase": "ground",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_MEDIUM_ground_wing_rotor",
+      "size": "MEDIUM",
+      "phase": "ground",
+      "component": "wing_rotor",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_SMALL_ground_lights",
+      "size": "SMALL",
+      "phase": "ground",
+      "component": "lights",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    },
+    {
+      "id": "U_LARGE_ground_tail",
+      "size": "LARGE",
+      "phase": "ground",
+      "component": "tail",
+      "requires_damage": true,
+      "attractants": [
+        "StandingWater",
+        "Wetland",
+        "Grassland",
+        "WasteFacility",
+        "Agriculture",
+        "PerchStructure"
+      ],
+      "actions": [
+        "DrainStandingWater",
+        "ExclusionFencing",
+        "GrassHeightManagement",
+        "Harassment",
+        "LandUseAgreement",
+        "LethalControl",
+        "WasteManagement"
+      ],
+      "norms": [
+        "Norm_139_337_f2",
+        "Norm_AC_150_5200_33"
+      ],
+      "provenance": "unified-OC-RAG"
+    }
+  ]
+}
