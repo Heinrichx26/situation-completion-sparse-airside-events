@@ -1,0 +1,13 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+# Every situation has at least one action slot (unknown is written).
+SELECT (COUNT(DISTINCT ?sit) AS ?situations) (COUNT(DISTINCT ?withAction) AS ?withActionSlot)
+WHERE {
+  ?sit a awhso:Situation .
+  OPTIONAL {
+    ?withAction a awhso:Situation ;
+                awhso:hasSlot ?slot .
+    ?slot awhso:slotLayer "action" .
+    FILTER (?withAction = ?sit)
+  }
+}
