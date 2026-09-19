@@ -1,0 +1,72 @@
+{
+  "comment": "Completion axioms. Attractants and actions are inferred from pathway + AC/CFR, never treated as NWSD observations.",
+  "pathway_rules": [
+    {
+      "id": "R1_large_departure_engine",
+      "size": "LARGE",
+      "phase": "departure",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": ["StandingWater", "Wetland", "Grassland"],
+      "actions": ["DrainStandingWater", "GrassHeightManagement", "Harassment", "LethalControl"],
+      "norms": ["Norm_139_337_f2", "Norm_AC_150_5200_33"]
+    },
+    {
+      "id": "R2_large_arrival_engine",
+      "size": "LARGE",
+      "phase": "arrival",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": ["StandingWater", "Wetland", "Grassland"],
+      "actions": ["DrainStandingWater", "GrassHeightManagement", "Harassment"],
+      "norms": ["Norm_139_337_f2", "Norm_AC_150_5200_33"]
+    },
+    {
+      "id": "R3_medium_departure_engine",
+      "size": "MEDIUM",
+      "phase": "departure",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": ["Grassland", "WasteFacility"],
+      "actions": ["GrassHeightManagement", "WasteManagement", "Harassment"],
+      "norms": ["Norm_139_337_f2", "Norm_AC_150_5200_33"]
+    },
+    {
+      "id": "R4_medium_arrival_engine",
+      "size": "MEDIUM",
+      "phase": "arrival",
+      "component": "engine",
+      "requires_damage": true,
+      "attractants": ["Grassland", "WasteFacility"],
+      "actions": ["GrassHeightManagement", "WasteManagement", "Harassment"],
+      "norms": ["Norm_139_337_f2", "Norm_AC_150_5200_33"]
+    },
+    {
+      "id": "R5_large_ground_fuselage_or_engine",
+      "size": "LARGE",
+      "phase": "ground",
+      "component": ["engine", "fuselage", "landing_gear"],
+      "requires_damage": true,
+      "attractants": ["StandingWater", "PerchStructure"],
+      "actions": ["ExclusionFencing", "DrainStandingWater", "Harassment"],
+      "norms": ["Norm_139_337_f2", "Norm_AC_150_5200_38"]
+    },
+    {
+      "id": "R6_any_size_waste_medium_large_arrival",
+      "size": ["MEDIUM", "LARGE"],
+      "phase": "arrival",
+      "component": ["engine", "wing_rotor"],
+      "requires_damage": true,
+      "attractants": ["WasteFacility", "Agriculture"],
+      "actions": ["WasteManagement", "LandUseAgreement"],
+      "norms": ["Norm_139_337_f2", "Norm_AC_150_5200_33"]
+    }
+  ],
+  "action_precondition": {
+    "DrainStandingWater": "StandingWater",
+    "GrassHeightManagement": "Grassland",
+    "WasteManagement": "WasteFacility",
+    "ExclusionFencing": "PerchStructure",
+    "LandUseAgreement": "Agriculture"
+  }
+}
