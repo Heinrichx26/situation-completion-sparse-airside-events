@@ -1,0 +1,16 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+# D3-control. Local pathway licenses a control action; plan omits it.
+CONSTRUCT {
+  ?g a awhso:PlanEventDisagreement ;
+     awhso:aboutSite ?site ;
+     awhso:aboutAction ?act ;
+     awhso:disagreementKind "pathway_omitted_control" .
+}
+WHERE {
+  { ?e awhso:occursAtAirport ?site } UNION { ?e awhso:occursAtOperator ?site }
+  ?e awhso:supportsAction ?act .
+  FILTER NOT EXISTS { ?act awhso:preconditionAttractant ?c . }
+  FILTER NOT EXISTS { ?site awhso:documentsAction ?act . }
+  BIND(IRI(CONCAT("https://w3id.org/awhso#gap_d3c_", STRAFTER(STR(?site), "#"), "_", STRAFTER(STR(?act), "#"))) AS ?g)
+}
