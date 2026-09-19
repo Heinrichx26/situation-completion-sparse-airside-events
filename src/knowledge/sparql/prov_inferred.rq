@@ -1,0 +1,10 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+# Integrity of C: inferred action slots must carry provenance.
+SELECT (COUNT(?slot) AS ?inferredSlots) (COUNT(?prov) AS ?withProvenance)
+WHERE {
+  ?slot a awhso:Slot ;
+        awhso:slotLayer "action" ;
+        awhso:slotStatus "inferred" .
+  OPTIONAL { ?slot awhso:hasProvenance ?prov . }
+}
