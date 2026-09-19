@@ -1,0 +1,15 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+# D2-empty. Control action documented at a site with no event log.
+CONSTRUCT {
+  ?g a awhso:PlanEventDisagreement ;
+     awhso:aboutSite ?site ;
+     awhso:aboutAction ?act ;
+     awhso:disagreementKind "control_documented_empty_event_log" .
+}
+WHERE {
+  ?site awhso:documentsAction ?act .
+  ?site awhso:hasEventLog false .
+  FILTER NOT EXISTS { ?act awhso:preconditionAttractant ?c . }
+  BIND(IRI(CONCAT("https://w3id.org/awhso#gap_d2e_", STRAFTER(STR(?site), "#"), "_", STRAFTER(STR(?act), "#"))) AS ?g)
+}
