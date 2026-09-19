@@ -1,0 +1,8 @@
+PREFIX awhso: <https://w3id.org/awhso#>
+
+SELECT (COUNT(DISTINCT ?jasc) AS ?n)
+WHERE {
+  ?e a awhso:DefectEvent ;
+     awhso:supportsAction ?act ;
+     awhso:jascCode ?jasc .
+}
