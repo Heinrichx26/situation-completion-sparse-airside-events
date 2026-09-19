@@ -1,0 +1,38 @@
+{
+  "comment": "Named attractants taken from public WHMP/WHA/WHSV text. Provenance is the document, status observed.",
+  "airports": {
+    "SEA": [
+      {"id": "SEA-attr-lora-lake", "class": "StandingWater", "name": "Lora Lake"},
+      {"id": "SEA-attr-miller-creek", "class": "StandingWater", "name": "Miller Creek"},
+      {"id": "SEA-attr-dcrdf", "class": "StandingWater", "name": "Des Moines Creek Regional Detention Facility ponds"},
+      {"id": "SEA-attr-glycol-ponds", "class": "StandingWater", "name": "Port stormwater and industrial wastewater/glycol ponds"},
+      {"id": "SEA-attr-tyee-golf", "class": "Grassland", "name": "Tyee Valley Golf Course"},
+      {"id": "SEA-attr-vacca-farm", "class": "Agriculture", "name": "Vacca Farm"},
+      {"id": "SEA-attr-angle-lake", "class": "StandingWater", "name": "Angle Lake"},
+      {"id": "SEA-attr-bow-lake", "class": "StandingWater", "name": "Bow Lake"},
+      {"id": "SEA-attr-des-moines-creek", "class": "StandingWater", "name": "Des Moines Creek"},
+      {"id": "SEA-attr-lake-reba", "class": "StandingWater", "name": "Lake Reba"}
+    ],
+    "GIF": [
+      {"id": "GIF-attr-mariana", "class": "StandingWater", "name": "Lake Mariana"},
+      {"id": "GIF-attr-george", "class": "StandingWater", "name": "Lake George"},
+      {"id": "GIF-attr-jessie", "class": "StandingWater", "name": "Lake Jessie"},
+      {"id": "GIF-attr-idylwild", "class": "StandingWater", "name": "Lake Idylwild"},
+      {"id": "GIF-attr-hartridge", "class": "StandingWater", "name": "Lake Hartridge"},
+      {"id": "GIF-attr-pansy", "class": "StandingWater", "name": "Lake Pansy"},
+      {"id": "GIF-attr-lenelle", "class": "StandingWater", "name": "Lake Lenelle"}
+    ],
+    "BJJ": [
+      {"id": "BJJ-attr-ag", "class": "Agriculture", "name": "Adjacent grain and hay fields"},
+      {"id": "BJJ-attr-ditch", "class": "StandingWater", "name": "On-airport ditch with temporary standing water"},
+      {"id": "BJJ-attr-ponds", "class": "StandingWater", "name": "Nearby ponds with resident domestic waterfowl"},
+      {"id": "BJJ-attr-msw", "class": "WasteFacility", "name": "Municipal solid waste landfill"}
+    ],
+    "0B5": [
+      {"id": "0B5-attr-green-pond", "class": "StandingWater", "name": "Green Pond"},
+      {"id": "0B5-attr-lake-pleasant", "class": "StandingWater", "name": "Lake Pleasant"},
+      {"id": "0B5-attr-sandplain", "class": "Grassland", "name": "Sandplain grasslands north of the runway"},
+      {"id": "0B5-attr-connecticut", "class": "StandingWater", "name": "Connecticut River"}
+    ]
+  }
+}
